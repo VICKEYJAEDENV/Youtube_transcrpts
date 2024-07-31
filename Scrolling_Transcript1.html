@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Scrolling Transcript</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="videoUrl" placeholder="Enter YouTube Video URL" style="width: 300px;">
+        <button onclick="loadVideo()">Load Video</button>
+    </div>
+    <div>
+        <iframe id="youtube-video" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div id="transcript">
+        <p class="transcript-line" data-start="0">[00:00] Transcript line 1...</p>
+        <p class="transcript-line" data-start="10">[00:10] Transcript line 2...</p>
+        <p class="transcript-line" data-start="20">[00:20] Transcript line 3...</p>
+        <!-- Add more transcript lines as needed -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
